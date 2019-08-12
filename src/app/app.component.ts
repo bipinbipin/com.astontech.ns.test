@@ -130,16 +130,8 @@ export class AppComponent implements OnInit {
         model.onNotificationActionTakenCallback = (actionIdentifier: string, message: Firebase.Message) => {
             console.log(`onNotificationActionTakenCallback fired! Message: ${JSON.stringify(message)}, Action taken: ${actionIdentifier}`);
 
-            var response;
-            switch(actionIdentifier) {
-                case 'INPUT_ACTION_FOR': 
-                    response = 'FOR'
-                    break;
-                
-                case 'INPUT_ACTION_AGAINST':
-                    response = 'AGAINST'
-                    break;
-            }
+            var response = actionIdentifier.substring(actionIdentifier.lastIndexOf('_')+1, actionIdentifier.length);
+
             console.log(`You are ${response} this issue. Survey ID: ${message.data.survey_id}`);
         };
 
