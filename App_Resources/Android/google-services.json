@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "396616598706",
+    "firebase_url": "https://ns-push-test-ef623.firebaseio.com",
+    "project_id": "ns-push-test-ef623",
+    "storage_bucket": "ns-push-test-ef623.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396616598706:android:8f33eb7e94842038",
+        "android_client_info": {
+          "package_name": "com.astontech.ns.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396616598706-7jn4cvkc74vr0kjs9a25u2s8a5g282mp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs46GoomZ_5KeMgpIJusfb-EmueyVYGR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396616598706-7jn4cvkc74vr0kjs9a25u2s8a5g282mp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "396616598706-21huei6aaao2quf0a3dg8fmrm7b1o4v0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.astontech.ns.test"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
