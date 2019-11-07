@@ -3,9 +3,7 @@
 </ActionBar>
 
 <GridLayout class="page page-content">
-    <ListView [items]="items" class="list-group">
-        <ng-template let-item="item">
-            <Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="list-group-item"></Label>
-        </ng-template>
-    </ListView>
+    <StackLayout>
+        <Button class="btn btn-primary btn-active" text="Record Audio" (tap)="togglePlay()"></Button>
+    </StackLayout>
 </GridLayout>

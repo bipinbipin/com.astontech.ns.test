@@ -127,9 +127,9 @@ export class AppComponent implements OnInit {
             identifier: "GENERAL"
         }];
 
-        model.onNotificationActionTakenCallback = (actionIdentifier: string, message: Firebase.Message) => {
+        model.onNotificationActionTakenCallback = (actionIdentifier: string, message: Firebase.Message, inputText?: string) => {
             console.log(`onNotificationActionTakenCallback fired! Message: ${JSON.stringify(message)}, Action taken: ${actionIdentifier}`);
-
+            console.log(` MESSAGE! ${inputText}`);
             var response = actionIdentifier.substring(actionIdentifier.lastIndexOf('_')+1, actionIdentifier.length);
 
             console.log(`You are ${response} this issue. Survey ID: ${message.data.survey_id}`);
